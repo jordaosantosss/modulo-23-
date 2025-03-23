@@ -9,7 +9,7 @@ Original file is located at
 
 from google.colab import files
 
-# Faça o upload do arquivo
+
 uploaded = files.upload()
 
 df = pd.read_csv('/content/ecommerce_estatistica.csv')
@@ -18,8 +18,7 @@ import pandas as pd
 from dash import Dash, dcc, html
 import plotly.express as px
 
-# Leia o arquivo CSV que já está no Colab
-df = pd.read_csv('/content/ecommerce_estatistica.csv')  # Altere o nome se necessário
+df = pd.read_csv('/content/ecommerce_estatistica.csv')  
 
 # Inicializa a aplicação Dash
 app = Dash(__name__)
